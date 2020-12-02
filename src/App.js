@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import './card.css';
+class App extends Component
+{
+  state ={
+     count1: 0,
+         };
+             Clickplus = () => {this.setState({ count1: this.state.count1 + 1});}
+             clickminus = () => {this.setState({ count1: this.state.count1-1});}
+             clickrefresh = () => {this.setState({count1: 0});}
+          render()
+            {
+              return(
+                 <div className="card">
+                   <h1 className="num">{this.state.count1}</h1>
+                    <button className="but" onClick={this.Clickplus} >+</button>
+                    <button className="but" onClick={this.clickrefresh}>⟳</button>
+                    <button className="but" onClick={this.clickminus}>-</button>
+                 </div>
+                )
+            }
 }
-
 export default App;

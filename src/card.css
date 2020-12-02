@@ -1,0 +1,25 @@
+.card
+{
+   background-color: aquamarine;
+   width: 300px;
+   height: 270px;
+   display: inline-block;
+   border-radius: 30%;
+   margin-left: 500px;
+   margin-top: 200px;
+}
+.num
+{
+    margin-left: 130px;
+    font-weight: bold;
+}
+.but
+{
+    margin-top: 70px;
+    margin-left: 18px;
+    border: 2px solid black;
+    font-size: 50px;
+    height: 70px;
+    width: 75px;
+    cursor: pointer;
+}
